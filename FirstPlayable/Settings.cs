@@ -22,7 +22,7 @@ namespace FirstPlayable
         public string Map4FileName { get; set; } = "RPGMap4.txt";
         public string MusicFileName { get; set; } = "DungeonMap.wav";
 
-        public string FileLocation { get; set; } = @"Maps-Music";
+        public string FileLocation { get; set; } = @"Files\";
         
 
 

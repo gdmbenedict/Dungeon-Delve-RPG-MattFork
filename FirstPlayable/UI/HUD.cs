@@ -23,7 +23,6 @@ namespace FirstPlayable
             Console.SetCursorPosition(0, map.mapHeight + 1);
             Console.WriteLine($"Player Health: {player.healthSystem.GetCurrentHealth()}/{player.healthSystem.GetMaximumHealth()} | Collected Seeds: {player.currentSeeds} | Attacking: {currentEnemyInfo}");
             RedrawLiveLog();
-            DrawQuestLog();
         }
 
         public void UpdateLegend()
