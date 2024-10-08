@@ -122,7 +122,6 @@ namespace FirstPlayable
                 
                 if (mapLayout[newEnemyPositionY, newEnemyPositionX] == '#')
                 {
-                    
                     return;
                 }
 

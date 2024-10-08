@@ -44,6 +44,7 @@ namespace FirstPlayable
             map = new Map(GetPath(currentLevel), enemies);
             player = new Player(settings.PlayerInitialHealth, settings.PlayerInitialDamage, settings.PlayerInitialLevel, map.initialPlayerPositionX, map.initialPlayerPositionY, map.layout, this);
             hud = new HUD(player, map);
+            player.hud = hud; //giving player hud reference so it can update the hud if required
             soundPlayer = new SoundPlayer(GetPath(settings.MusicFileName));
             soundPlayer.PlayLooping();
             
@@ -223,10 +224,7 @@ namespace FirstPlayable
             player.PlayerInput(map, enemies);
            
         }
-            
-            
-
-            
+                
     }
 
 }

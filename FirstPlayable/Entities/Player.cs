@@ -49,6 +49,9 @@ namespace FirstPlayable
 
         public List<EnemyManager> enemies;
 
+        //Live Log;
+        public HUD hud;
+
         public Player(int maxHealth, int health, int damage, int startX, int startY, char[,] mapLayout, GameManager gameManager)
         {
             healthSystem = new HealthSystem(maxHealth);

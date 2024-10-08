@@ -8,6 +8,7 @@ namespace FirstPlayable
 {
     public class HealthPotion : Item
     {
+
         internal override void Use(Player player)
         {
             player.healthSystem.Heal(2);
